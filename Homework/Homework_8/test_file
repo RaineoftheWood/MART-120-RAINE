@@ -1,0 +1,36 @@
+html>
+  <head>
+    <title>Title of the document</title>
+    <style>
+      input {
+        width: 90%;
+        padding: 10px;
+        margin: 5px;
+        outline: none;
+      }
+      input[type="submit"] {
+        width: 150px;
+      }
+      input::placeholder {
+        color: #1c87c9;
+        opacity: 1;
+      }
+      input:placeholder-shown {
+        border: 1px solid #095484;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/form/submit" method="post">
+      First name:
+      <input type="text" name="firstname" placeholder="John">
+      <br>
+      <br> Last name:
+      <input type="text" name="lastname" placeholder="Lennon">
+      <br>
+      <br> Email address:
+      <input type="email" name="email" placeholder="YourEmail@gmail.com">
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
