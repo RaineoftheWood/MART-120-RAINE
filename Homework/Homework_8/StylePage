@@ -1,0 +1,26 @@
+span.yellowcolor{
+    Color:rgb(7, 7, 7);
+    background-color:rgb(210, 210, 214);
+    font-size: 24px;
+font-style: bold;
+}
+span.baby{
+    border-bottom-color: black;
+    color: rgb(221, 152, 166);
+    font-size: small;
+    font-style: normal;
+}
+span.crack{
+    color: rgb(0, 0, 0);
+    border-inline-color:rgb(199, 108, 235);
+    font-size: large;
+    font-style: helvetica;
+    ruby-overhang: auto;
+}
+#color{
+    color:green; 
+    background-color: aqua;
+}
+#background {
+        background-image: linear-gradient(rgb(183, 183, 117), rgb(227, 152, 227)); 
+}
