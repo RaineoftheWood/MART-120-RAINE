@@ -1,0 +1,73 @@
+<html>
+    <head>
+            <title><h3>Welcome To your Place</h3></title>
+            <link rel="stylesheet" type="text/css" href="mainstyle.css">
+   </head>
+   <Style>
+   span{ background-color:rgb(207, 207, 230);}
+</style>
+   <body>
+     <p> <h4><span> me the taker of souls and the namer of activities and hobbies!</span></h4>
+    <br/>
+   </p>
+</body>
+    <body> <ol> 
+            <li><span class="yellowcolor">Doodling</span></li>
+                <ul>
+                    <li><span class=baby>Ink</span></li>
+                    <li><span class=baby>Paint</span></li>
+                    <li><span class=baby>Pencil</span></li>
+                    <li><span class=baby>Collage</span></li>
+                </ul>
+            <li><span class="yellowcolor">Playing Music</span></li>
+                <ul> 
+                    <li><span class=baby>Bass</span></li>
+                    <li><span class=baby>Guitar</span></li>
+                    <li><span class=baby>Violin</span></li>
+                    <li><span class=baby>Synth?</span></li>
+                </ul>
+            <li><span class="yellowcolor">Video Games</span></li>
+             <ul>
+                <li><span class=baby>2K</li>
+                <li><span class=baby>Minecraft</span></li>
+                <li><span class=baby>Pokemon</span></li>
+                <li><span class=baby>Zelda</span></li>
+             </ul>
+            <li><span class="yellowcolor">Basketball</span></li>
+            <ul>
+                <li><span class=baby>Shooting</span></li>
+                <li><span class=baby>Dribbling</span></li>
+                <li><span class=baby>dunking</span></li>
+                <li><span class=baby>Defense</span></li>
+            </ul>
+    </ol>
+ </body>
+<img src="c:\Users\otzi3\OneDrive\Pictures\Cowboy_1_9.jpg"Height='200' Width='160'/>
+<head>
+     <h1><span class=yellowcolor>My Favorite Reasturants?</span></h1>
+     <br/> I personnally never thought about this. 
+</head>
+<body>
+    <ol>
+        <li><a href="https://www.zoothai.com/"><span class=crack>Zoothai</span></a></li>
+        <li><a href="https://www.yelp.com/biz/pho-vi-missoula"><span class=crack>Pho Vi</span></a></li>
+        <li><a href="https://www.bigapizza.com/"><span class=crack>Biga Pizza</span></a></li>
+        
+    </ol>
+</body>
+<head>
+    <h1><span class=yellowcolor>My Favortie Websites?</span></h1>
+    <br/> I deffinatly have not thought of this. 
+</head>
+<body> 
+    <ol>
+        <li><a href="https://www.kbga.org/kbgahome"style="text-decoration:none"target="_blank"><span class=baby>Kgba.com</span></a></li>
+        <li><a href="https://freesound.org/search/?q=salt"style="text-decoration:none"target="_blank"><span class=baby>Freesound.com</span></a></li>
+        <li><a href="https://www.nasa.gov/"style="text-decoration:none"target="_blank"><span class=baby>Nasa.gov</span></a></li>
+    </ol>
+</body>
+<body>
+<a href="Wood_ThirdPage_10-09-22.html"style="text-decoration:none"target="_blank"><span id=color>Third Page</span></a>
+<a href="Wood_SecondPage_10-9-22.html"style="text-decoration:none"target="_blank"><span id=color>Second Page</span></a>
+</body>
+</html>
