@@ -1,0 +1,55 @@
+<html>
+    <title>Information Page</title>
+    <link rel="stylesheet" type="text/css" href="mainstyle.css">
+    <head>
+        <script>
+        function checkboxs()
+        {window.alert("Hello") }
+         function getData(){
+        
+            var name = document.getElementById("txtName").value;
+            var phone = document.getElementById("txtPhone").value;
+            var email = document.getElementById("txtEmail").value;
+
+            window.alert("name:  " + name + " phone:  " + phone + "email:  " + email);
+            
+            if ( name + phone + email  == "") {
+                document.getElementById("txtName").focus();
+                    document.getElementById("txtName").style.backgroundColor = "red";
+                    document.getElementById("txtPhone").focus();
+                    document.getElementById("txtPhone").style.backgroundColor = "red";
+                    document.getElementById("txtEmail").focus();
+                    document.getElementById("txtEmail").style.backgroundColor = "red";
+            }
+         }
+        </script>
+    </head>
+    <body>
+        <span class="yellowcolor">Submit Your Information</span>
+<br/>
+        <table>
+            <tr>
+                <td><span class=crack>Name</span></td>
+                <td><input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px;" type="text" id="txtName" placeholder="John Doe"></td>
+            </tr>
+            <tr>
+                <td><span class=crack>Phone Number</span></td>
+                <td><input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px;" type="text" id="txtPhone" placeholder="XXX-XXX-XXXX"></td>
+            </tr>
+            <tr>
+                <td><span class=crack>Email</span></td>
+                <td><input STYLE="color: #FFFFFF; font-family: Verdana; font-weight: bold; font-size: 12px;" type="text" id="txtEmail" placeholder="JohnDoe@gmail.com"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnSubmit" onClick="getData();">Submit</button></td>
+                <td colspan="2"><button id="btnSubmit" onClick="checkboxs();">Checkboxes</button></td>
+            </tr>
+    
+        </table>
+        <div id="finalResult"></div>
+    </body>
+        <body>
+            <a href="Wood_MainPage_10-9-22.html"style="text-decoration:none"target="_blank"><span id=color>Third Page</span></a>
+            <a href="Wood_SecondPage_10-9-22.html"style="text-decoration:none"target="_blank"><span id=color>Second Page</span></a>
+        </body>
+ </html>
