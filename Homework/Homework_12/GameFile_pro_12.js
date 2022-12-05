@@ -1,16 +1,16 @@
-var x = 50;
+    var x = 50;
     var y = 300; 
     var diameter = 25;
     var xm = -5;
     var xd = 450;
     var mousex = 0;
     var mousey = 0;
-   var yR = Math.floor(Math.random()*10);
+    var yR = Math.floor(Math.random()*10);
     function setup() 
     {
       createCanvas(900, 900);
     }
-function draw ()
+    function draw ()
 {
     circle();
     controlcircle();

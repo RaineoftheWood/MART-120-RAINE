@@ -1,0 +1,266 @@
+    var myXs=[];
+    var myYs=[];
+    var diameters=[];
+    var D1=[];
+    var D2=[];
+    var T1y=[]; 
+    var T1x=[];
+    var T2y=[]; 
+    var T2x=[];
+    var T3y=[];
+    var T3x=[];
+    var x = 50;
+    var y = 300; 
+    var diameter = 25;
+    var xm = -5;
+    var xd = 450;
+    var mousex = 0;
+    var mousey = 0;
+    var yR = Math.floor(Math.random()*10);
+    function setup() 
+    {
+      createCanvas(900, 900);
+    }
+    //Exit Array 
+    myXs[0]= 800;  
+    myYs[0]= 350;
+    diameters[0]= 100;
+    //Ellipses Boarders 1,2,3,4,5
+    //1
+    myXs[1]=900;
+    myYs[1]=450;
+    D1[0]=20;
+    D2[0]=1000;
+    //2
+    myXs[2]=0;
+    myYs[2]=450;
+    D1[1]=20;
+    D2[1]=1000;
+    //3
+    myXs[3]=450;
+    myYs[3]=0;
+    D1[2]=1000;
+    D2[2]=20;
+    //4
+    myXs[4]=450; 
+    myYs[4]=900;
+    D1[3]=1000;
+    D2[3]=20;
+    //5 
+    myXs[5]=xm;
+    myYs[5]=300;
+    D1[4]=yR;
+    D2[4]=yR;
+    //6 
+    myXs[6]=xm;
+    myYs[6]=30; 
+    D1[5]= 100;
+    D2[5]= 50;
+    //Squares 1 & 2 
+    //1
+    myXs[7]= xm;
+    myYs[7]= 100;
+    diameters[1]=100;
+    //2
+    myXs[8]=mousex;
+    myYs[8]=mousey;
+    diameters[2]=100;
+    //Rectangle 1 
+    myXs[9]=xd; 
+    myYs[9]=400;
+    D1[6]=50;
+    D2[6]=90;
+    //Trinagles 1 & 2 
+    //tri 1 
+    T1x[0]=xm;
+    T1y[0]=700;
+    T2x[0]=xd;
+    T2y[0]=600;
+    T3x[0]=600;
+    T3y[0]=600;
+    //tri 2 
+    T1x[1]=xd;
+    T1y[1]=xm;
+    T2x[1]=50;
+    T2y[1]=xd;
+    T3x[1]=40;
+    T3y[1]=xm;
+
+
+    function draw ()
+{
+    circle();
+
+    controlcircle();
+    
+    ellipseo();
+
+    triangletriangle();
+
+    Squarerect();
+    
+    RandomEllipse();
+
+    Boarders();
+
+    Exit();
+
+    mousesq();
+    
+    EndEvent();
+
+  
+    }
+    function EndEvent()
+    {
+        if (xm>=900)
+        {
+          xm = 0;
+        }
+        else if (xm<=900)
+        {
+           xm+=3;
+        } 
+        if (xd >= 900)
+        {
+          xd=50;
+        }
+        else if (xd <= 900)
+        {
+          xd+=1;
+        } 
+        if (x>=800 && x<=900 && y>=350 && y<=450)
+      {
+        window.alert("Winner of the game, is you!");
+      }
+    }
+    function circle(x, y, diameter)
+    {
+
+    }
+    function ellipseo()
+    {
+        d = color(300);
+        fill(d);
+        //Ellipse 6 
+        ellipse(xm, myYs[6], D1[5], D2[5]);
+    
+    }
+    function controlcircle()
+    {
+        //Cicle 1
+    circle(x, y, diameter);
+    
+    if (x >= 900) 
+    {
+      x = 50;
+    }
+    else if (x<=0)
+    {
+      x = 890;
+    }
+
+    if (keyIsDown(83)) 
+    {
+      y += 10;
+    } 
+    else if (keyIsDown(87)) 
+    {
+      y -= 10;
+    }
+
+    if (keyIsDown(68)) 
+    {
+      x += 10;
+    } 
+    else if (keyIsDown(65)) 
+    {
+      x -= 10;
+    }
+
+    if (y >= 900) 
+    {
+      y = 50;
+    }
+    else if (y<=0)
+    {
+      y= 850;
+    }
+
+    if (diameter < 40) 
+    {
+      diameter += 3;
+    } 
+    else if (diameter >= 200) 
+    {
+      diameter = 25;
+    }
+}
+function mousesq()
+{
+    //Square 2 
+    square (mousex, mousey, diameters[2]);
+
+}
+   function triangletriangle()
+   {
+    //Tri 1 
+    triangle(xm,T1y[0], xd, T2y[0], T3x[0], T3y[0]);
+    //tri 2 
+    triangle(xd,xm,T2x[1], xd, T3x[1], xm);
+   }
+   function Squarerect()
+   {
+    //Rect 1 
+    rect(xd, myYs[9], D1[6], D2[6]);
+    //Square 1 
+    square(xm, myYs[7], diameters[1]);
+   }
+   function RandomEllipse()
+   {
+    //Ellipse 5 
+    ellipse(myXs[5],myYs[5], yR, yR);
+   }
+   function Boarders() 
+   {
+    D = color(20, 30, 198)
+    fill (D)
+    //Ellipse1
+    ellipse(myXs[1],  myYs[1], D1[0], D2[0]);
+    //Ellipse 2 
+    ellipse(myXs[2],  myYs[2], D1[1], D2[1]);
+    //Ellipse 3 
+    ellipse(myXs[3],  myYs[3], D1[2], D2[2]);
+    //ellipse 4 
+    ellipse(myXs[4],  myYs[4], D1[3], D2[3]);
+   }
+   function Exit()
+   {
+    c=color(200,12,12);
+    fill(c);
+    {
+        square( myXs[0],  myYs[0], diameters[0]);
+    }
+   }
+  function mouseClicked() 
+    {  
+      mousex = mouseX;
+      mousey = mouseY;
+    }
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
